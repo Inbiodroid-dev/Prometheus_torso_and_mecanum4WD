@@ -28,10 +28,10 @@ SimpleCmdVel mecanum4WD_velocity_read{0.0, 0.0, 0.0};
 //Motor pins
 const MitMotor::MotorType AK_10_REVERSED{-18.0f, 18.0f, 1.0f, -1.0f};
 CanMotor * wheel_motors[] = {
-    new MitMotor(MitMotor::AK_10, CS_3, INT_3, "Wheel 0"),
-    new MitMotor(AK_10_REVERSED, CS_4, INT_4, "Wheel 1"),
-    new MitMotor(AK_10_REVERSED, CS_5, INT_5, "Wheel 2"),
-    new MitMotor(AK_10_REVERSED, CS_6, INT_6, "Wheel 3")
+    new MitMotor(MitMotor::AK_10, CS_3, INT_3, "Wheel 0", SPI, false),
+    new MitMotor(AK_10_REVERSED, CS_4, INT_4, "Wheel 1", SPI, false),
+    new MitMotor(AK_10_REVERSED, CS_5, INT_5, "Wheel 2", SPI, false),
+    new MitMotor(AK_10_REVERSED, CS_6, INT_6, "Wheel 3", SPI, false)
 };
 
 //Interruptioin pins

@@ -12,6 +12,7 @@
 
 #include <tuple>
 #include "StateMachine.h"
+#include "SPI.h"
 
 #define A_THOUSAND 1000
 
@@ -38,6 +39,7 @@ void setup()
     //   ; // wait for serial port to connect. Needed for native USB port only.
     // }
   #endif
+  SPI.begin();
   p2pComm.begin(); // Ethernet start; the cofiguration come from the McuConfig object.
 }
 

@@ -7,9 +7,9 @@
 /* Motors declaration*/
 // * Motors declaration
 CanMotor *motors[] = {
-    new MitMotor(MitMotor::AK_10, CS_0, INT_0, "AK_10_1"),
-    new MitMotor(MitMotor::AK_10, CS_1, INT_1, "AK_10_2"),
-    new MitMotor(MitMotor::AK_10, CS_2, INT_2, "AK_10_3")};
+    new MitMotor(MitMotor::AK_10, CS_0, INT_0, "AK_10_1", SPI, false),
+    new MitMotor(MitMotor::AK_10, CS_1, INT_1, "AK_10_2", SPI, false),
+    new MitMotor(MitMotor::AK_10, CS_2, INT_2, "AK_10_3", SPI, false)};
 
 constexpr size_t NUM_MOTORS = sizeof(motors) / sizeof(motors[0]);
 
